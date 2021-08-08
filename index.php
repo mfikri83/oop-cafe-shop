@@ -14,8 +14,8 @@
     <div class="menu-items">
       <?php foreach ($menus as $menu): ?>
         <div class="menu-item">
-            <img src="<?= $menu->image ?>">
-            <h3 class="menu-item-name"><?= $menu->name ?></h3>
+            <img src="<?= $menu->getImage() ?>">
+            <h3 class="menu-item-name"><?= $menu->getName() ?></h3>
             <p class="price">$<?= $menu->getTaxIncludedPrice() ?> (termasuk pajak)</p>
         </div>
       <?php endforeach ?>
