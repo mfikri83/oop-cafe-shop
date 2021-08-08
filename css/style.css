@@ -94,6 +94,11 @@ img {
   border-radius: 5px;
 }
 
+.icon-spiciness {
+  display: inline-block;
+  width: 20px;
+}
+
 .menu-item span {
   font-size: 16px;
 }

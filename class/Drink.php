@@ -3,7 +3,7 @@
 require_once('Menu.php');
 
 class Drink extends Menu {
-    // property instance
+    // property instance class Drink
     private $type;
 
     // method construct class Drink  
