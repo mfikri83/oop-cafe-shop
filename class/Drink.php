@@ -8,10 +8,7 @@ class Drink extends Menu {
 
     // method construct class Drink  
     public function __construct($name, $price, $image, $type) {
-        $this->name = $name;
-        $this->price = $price;
-        $this->image = $image;
-        self::$count++;
+        parent::__construct($name,$price,$image);
         $this->type = $type;
     }  
 
