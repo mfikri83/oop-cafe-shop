@@ -36,6 +36,10 @@ class Menu {
     public function getTaxIncludedPrice(){
         return round($this->price * 1.0725, 2);
     }
+
+    public function getTotalPrice(){
+        return $this->getTaxIncludedPrice() * $this->orderCount;
+    }
 }
 
 
