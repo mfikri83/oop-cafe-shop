@@ -17,6 +17,7 @@
             <img src="<?= $menu->getImage() ?>">
             <h3 class="menu-item-name"><?= $menu->getName() ?></h3>
             <p class="price">$<?= $menu->getTaxIncludedPrice() ?> (termasuk pajak)</p>
+            <p>Qty: <?= $menu->getOrderCount(); ?></p>
         </div>
       <?php endforeach ?>
       

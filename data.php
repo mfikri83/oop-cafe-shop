@@ -7,6 +7,8 @@ $coffee = new Menu('KOPI', 5, 'https://s3-ap-northeast-1.amazonaws.com/progate/s
 $curry = new Menu('GULAI', 9, 'https://s3-ap-northeast-1.amazonaws.com/progate/shared/images/lesson/php/curry.png');
 $pasta = new Menu('PASTA', 12, 'https://s3-ap-northeast-1.amazonaws.com/progate/shared/images/lesson/php/pasta.png');
 
+$juice->setOrderCount(2);
+
 $menus = [$juice,$coffee,$curry,$pasta];
 
 
