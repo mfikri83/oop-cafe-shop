@@ -15,6 +15,10 @@ class Menu {
     {
         echo 'Saya adalah '. $this->name;
     }
+
+    public function getTaxIncludedPrice(){
+        return round($this->price * 1.0725, 2);
+    }
 }
 
 

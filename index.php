@@ -16,7 +16,7 @@
         <div class="menu-item">
             <img src="<?= $menu->image ?>">
             <h3 class="menu-item-name"><?= $menu->name ?></h3>
-            <p class="price">$<?= $menu->price ?></p>
+            <p class="price">$<?= $menu->getTaxIncludedPrice() ?> (termasuk pajak)</p>
         </div>
       <?php endforeach ?>
       
