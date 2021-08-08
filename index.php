@@ -13,7 +13,11 @@
     <h1 class="logo">Café Shop</h1>
     <div class="menu-items">
       <?php foreach ($menus as $menu): ?>
-        <h3 class="menu-item-name"><?php echo $menu->name ?></h3>
+        <div class="menu-item">
+            <img src="<?= $menu->image ?>">
+            <h3 class="menu-item-name"><?= $menu->name ?></h3>
+            <p class="price">$<?= $menu->price ?></p>
+        </div>
       <?php endforeach ?>
       
     </div>
