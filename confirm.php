@@ -1,5 +1,5 @@
 <!-- Import data.php -->
-<?php require_once('data.php') ?>
+<?php require_once('class/data.php') ?>
 
 <!DOCTYPE html>
 <html>
