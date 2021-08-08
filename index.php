@@ -17,7 +17,7 @@
           <?php foreach ($menus as $menu): ?>
             <div class="menu-item">
                 <img src="<?= $menu->getImage() ?>">
-                <h3 class="menu-item-name"><?= $menu->getName() ?></h3>
+                <h3 class="menu-item-name"><a href="show.php"><?= $menu->getName() ?></a></h3>
                 <?php if($menu instanceof Drink):?>
                 <p class="menu-item-type"><?= $menu->getType() ?></p>
                 <?php else: ?>
