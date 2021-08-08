@@ -1,4 +1,7 @@
-<?php require_once('class/data.php') ?>
+<?php 
+  require_once('class/data.php');
+  require_once('class/Menu.php')
+?>
 
 <!DOCTYPE html>
 <html>
