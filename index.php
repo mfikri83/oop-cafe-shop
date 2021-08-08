@@ -18,6 +18,9 @@
             <div class="menu-item">
                 <img src="<?= $menu->getImage() ?>">
                 <h3 class="menu-item-name"><?= $menu->getName() ?></h3>
+                <?php if($menu instanceof Drink):?>
+                <p class="menu-item-type"><?= $menu->getType() ?></p>
+                <?php endif ?>
                 <p class="price">$<?= $menu->getTaxIncludedPrice() ?> (termasuk pajak)</p>
                 <p>Qty: <?= $menu->getOrderCount(); ?></p>
                 <input type="text" value="0" name="<?= $menu->getName() ?>">
