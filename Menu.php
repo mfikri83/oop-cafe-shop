@@ -1,9 +1,13 @@
 <?php 
 class Menu {
+    // property instance
     private $name;
     private $price;
     private $image;
     private $orderCount = 0;
+
+    // property class
+    public  static $count = 4;
 
     public function __construct($name,$price,$image)
     {

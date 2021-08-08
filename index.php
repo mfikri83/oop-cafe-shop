@@ -11,6 +11,7 @@
 <body>
   <div class="menu-wrapper container">
     <h1 class="logo">Café Shop</h1>
+    <h3>Jumlah item: <?= Menu::$count ?></h3>
     <form action="confirm.php" method="post">
         <div class="menu-items">
           <?php foreach ($menus as $menu): ?>
