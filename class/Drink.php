@@ -6,6 +6,15 @@ class Drink extends Menu {
     // property instance
     private $type;
 
+    // method construct class Drink  
+    public function __construct($name, $price, $image, $type) {
+        $this->name = $name;
+        $this->price = $price;
+        $this->image = $image;
+        self::$count++;
+        $this->type = $type;
+    }  
+
     public function getType(){
         return $this->type;
     }

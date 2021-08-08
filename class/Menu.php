@@ -1,13 +1,13 @@
 <?php 
 class Menu {
     // property instance
-    private $name;
-    private $price;
-    private $image;
+    protected $name;
+    protected $price;
+    protected $image;
     private $orderCount = 0;
 
     // property class
-    public static $count = 0;
+    protected static $count = 0;
 
     public function __construct($name,$price,$image)
     {
