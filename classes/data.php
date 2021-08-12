@@ -3,6 +3,7 @@
 require_once('Drink.php');
 require_once('Food.php');
 require_once('Review.php');
+require_once('User.php');
 
 // instance class Drink
 $juice = new Drink('JUS', 6, 'https://s3-ap-northeast-1.amazonaws.com/progate/shared/images/lesson/php/juice.png','dingin');
@@ -13,6 +14,12 @@ $curry = new Food('GULAI', 9, 'https://s3-ap-northeast-1.amazonaws.com/progate/s
 $pasta = new Food('PASTA', 12, 'https://s3-ap-northeast-1.amazonaws.com/progate/shared/images/lesson/php/pasta.png',1);
 
 $menus = [$juice,$coffee,$curry,$pasta];
+
+// instance class User
+$user1 = new User('Gunawan','pria');
+$user2 = new User('Watson','wanita');
+
+$users = [$user1,$user2];
 
 // instance class Review
 $review1 = new Review($juice->getName(), 'Yummy');
