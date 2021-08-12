@@ -16,7 +16,7 @@ $pasta = new Food('PASTA', 12, 'https://s3-ap-northeast-1.amazonaws.com/progate/
 $menus = [$juice,$coffee,$curry,$pasta];
 
 // instance class User
-$user1 = new User('Gunawan','pria');
+$user1 = new User('Rusdi','pria');
 $user2 = new User('Watson','wanita');
 
 $users = [$user1,$user2];

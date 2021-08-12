@@ -18,7 +18,7 @@ class Review {
         return $this->body;
     }
 
-    public function getUsers($users){
+    public function getUser($users){
         foreach($users as $user) {
             if ($user->getName() == $this->userName) {
                 return $user;

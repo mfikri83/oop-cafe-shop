@@ -36,8 +36,17 @@
           <h4>Ulasan</h4>
         </div>
         <?php foreach($menuReviews as $review) : ?>
+          <?php $user = $review->getUser($users) ?>
           <div class="review-list-item">
-            <p><?= $review->getBody() ?></p>
+            <div class="review-user">
+              <?php if($user->getGender() == 'pria') :?>
+                <img src="https://s3-ap-northeast-1.amazonaws.com/progate/shared/images/lesson/php/male.png" class='icon-user'>
+              <?php else :?>
+                <img src="https://s3-ap-northeast-1.amazonaws.com/progate/shared/images/lesson/php/female.png" class='icon-user'>
+              <?php endif ?>
+              <p><?= $user->getName() ?></p>
+            </div>
+            <p class="review-text"><?= $review->getBody() ?></p>
           </div>
         <?php endforeach ?>
       </div>
