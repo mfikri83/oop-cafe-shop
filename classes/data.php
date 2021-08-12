@@ -22,14 +22,14 @@ $user2 = new User('Watson','wanita');
 $users = [$user1,$user2];
 
 // instance class Review
-$review1 = new Review($juice->getName(), 'Yummy');
-$review2 = new Review($curry->getName(), 'Sangat sehat');
-$review3 = new Review($coffee->getName(), 'Wanginya harum');
-$review4 = new Review($pasta->getName(), 'Sausnya enak :)');
-$review5 = new Review($juice->getName(), 'Hanya jus jeruk biasa');
-$review6 = new Review($curry->getName(), 'Rasanya enak untuk harganya');
-$review7 = new Review($coffee->getName(), 'Kepahitannya cukup.');
-$review8 = new Review($pasta->getName(), 'Bahan yang digunakan berkualitas.');
+$review1 = new Review($juice->getName(), $user1->getName(), 'Yummy');
+$review2 = new Review($curry->getName(), $user1->getName(), 'Sangat sehat');
+$review3 = new Review($coffee->getName(), $user1->getName(), 'Wanginya harum');
+$review4 = new Review($pasta->getName(), $user1->getName(), 'Sausnya enak :)');
+$review5 = new Review($juice->getName(), $user2->getName(), 'Hanya jus jeruk biasa');
+$review6 = new Review($curry->getName(), $user2->getName(), 'Rasanya enak untuk harganya');
+$review7 = new Review($coffee->getName(), $user2->getName(), 'Kepahitannya cukup.');
+$review8 = new Review($pasta->getName(), $user2->getName(), 'Bahan yang digunakan berkualitas.');
 
 $reviews = array($review1, $review2, $review3, $review4, $review5, $review6, $review7, $review8);
 
