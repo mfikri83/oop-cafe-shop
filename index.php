@@ -1,6 +1,6 @@
 <?php 
-  require_once('class/data.php');
-  require_once('class/Menu.php')
+  require_once('classes/data.php');
+  require_once('classes/Menu.php')
 ?>
 
 <!DOCTYPE html>
