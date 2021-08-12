@@ -44,7 +44,6 @@
               <?php else :?>
                 <img src="https://s3-ap-northeast-1.amazonaws.com/progate/shared/images/lesson/php/female.png" class='icon-user'>
               <?php endif ?>
-              <p><?= $user->getId() ?></p>
               <p><?= $user->getName() ?></p>
             </div>
             <p class="review-text"><?= $review->getBody() ?></p>
