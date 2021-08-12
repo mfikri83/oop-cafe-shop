@@ -4,6 +4,7 @@
 
     $menuName = $_GET['name'];
     $menu = Menu::findByName($menus,$menuName);
+    $menuReviews = $menu->getReviews($reviews);
 ?>
 
 <!DOCTYPE html>
@@ -34,9 +35,10 @@
           <img src="https://s3-ap-northeast-1.amazonaws.com/progate/shared/images/lesson/php/review.png" class='icon-review'>
           <h4>Ulasan</h4>
         </div>
-        <?php foreach($reviews as $review) : ?>
-          <h3><?= $review->getMenuName() ?></h3>
-          <p><?= $review->getBody() ?></p>
+        <?php foreach($menuReviews as $review) : ?>
+          <div class="review-list-item">
+            <p><?= $review->getBody() ?></p>
+          </div>
         <?php endforeach ?>
       </div>
     </div>

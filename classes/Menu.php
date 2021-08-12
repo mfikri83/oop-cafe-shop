@@ -46,6 +46,16 @@ class Menu {
         return $this->getTaxIncludedPrice() * $this->orderCount;
     }
 
+    public function getReviews($reviews){
+        $reviewsForMenu = [];
+        foreach($reviews as $review) {
+            if($review->getMenuName() == $this->name){
+                $reviewsForMenu[] = $review;
+            }
+        }
+        return $reviewsForMenu;
+    }
+
     // method class 
     public static function getCount(){
         return self::$count;
